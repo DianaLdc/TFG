@@ -66,9 +66,7 @@
 									<li><a href="#">Películas del mes</a></li>
 									<li><a href="#">Artistas peruanos</a></li>
 									<li><a href="https://github.com/DianaLdc" target="_blank">Mi GitHub</a></li>
-									<li><a href="https://www.coursera.org/onboarding/role-select?isFirstTimeSeeingOnboarding=true"
-											target="_blank">Cursos de interés</a></li>
-									<li><a href="https://pathfinder.w3schools.com/" target="_blank">Pathfinder</a></li>
+									
 								</ul>
 							</section>
 						</div>
@@ -227,68 +225,80 @@
 
 		<!-- Footer -->
 		<div id="footer-wrapper">
-			<footer id="footer" class="container">
-				<div class="row">
-					<!-- Columna 1: Sobre mí -->
-					<div class="col-3 col-6-medium col-12-small">
-						<section class="widget links">
-							<h3>Sobre mí</h3>
-							<p>Soy Diana Ramos Rodrigo, estudiante de primer año de Ingeniería de Sistemas. Me apasiona
-								la
-								tecnología, el diseño digital y aprender cosas nuevas que pueda aplicar en proyectos
-								futuros.</p>
-						</section>
-					</div>
-
-					<!-- Columna 2: Proyectos futuros -->
-					<div class="col-3 col-6-medium col-12-small">
-						<section class="widget links">
-							<h3>Proyectos futuros</h3>
-							<ul class="style2">
-								<li>Desarrollar mi propia página web profesional</li>
-								<li>Crear aplicaciones de escritorio en Python</li>
-								<li>Colaborar en proyectos de software libre</li>
-								<li>Explorar diseño UI/UX y experiencias digitales</li>
-								<li>Experimentar con inteligencia artificial y automatización</li>
-							</ul>
-						</section>
-					</div>
-
-					<!-- Columna 3: Recursos -->
-					<div class="col-3 col-6-medium col-12-small">
-						<section class="widget links">
-							<h3>Recursos</h3>
-							<ul class="style2">
-								<li><a href="https://github.com/DianaLdc" target="_blank">GitHub</a></li>
-								<li><a href="https://www.coursera.org/onboarding/role-select?isFirstTimeSeeingOnboarding=true"
-										target="_blank">Cursos</a></li>
-								<li><a href="https://pathfinder.w3schools.com/" target="_blank">Pathfinder</a></li>
-							</ul>
-						</section>
-					</div>
-
-					<!-- Columna 4: Contacto -->
-					<div class="col-3 col-6-medium col-12-small">
-						<section class="widget contact last">
-							<h3>Contacto</h3>
-							<p>dramosrod@unsa.edu.pe</p>
-						</section>
-					</div>
+		<footer id="footer" class="container">
+			<div class="row">
+				<!-- Columna 1: Sobre el proyecto -->
+				<div class="col-3 col-6-medium col-12-small">
+					<section class="widget links">
+						<h3>Sobre el proyecto</h3>
+						<p>Este sitio web tiene como propósito difundir y recomendar experiencias culturales, artísticas
+							y turísticas de <strong>Arequipa</strong>.
+							Buscamos conectar a los visitantes con los espacios más representativos de la región,
+							fomentando el aprecio por nuestra historia, arte y tradiciones.</p>
+					</section>
 				</div>
 
-				<!-- Copyright -->
-				<div class="row">
-					<div class="col-12">
-						<div id="copyright">
-							<ul class="menu">
-								<li>&copy; Diana Ramos Rodrigo. Todos los derechos reservados</li>
-								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
+				<!-- Columna 2: Rutas y experiencias -->
+				<div class="col-3 col-6-medium col-12-small">
+					<section class="widget links">
+						<h3>Rutas y experiencias</h3>
+						<ul class="style2">
+							<li><a href="right-sidebar.html">Rutas culturales y patrimoniales</a></li>
+							<li><a href="no-sidebar.html">Talleres artísticos locales</a></li>
+							<li><a href="right-sidebar.html">Sabores de Arequipa</a></li>
+							<li><a href="left-sidebar.html">Recomendaciones</a></li>
+							<li><a href="viajes.html">Otros destinos</a></li>
+						</ul>
+					</section>
+				</div>
+
+				<!-- Columna 3: Recursos -->
+				<div class="col-3 col-6-medium col-12-small">
+					<section class="widget links">
+						<h3>Recursos</h3>
+						<ul class="style2">
+							<li><a href="https://www.muniarequipa.gob.pe/" target="_blank">Municipalidad de Arequipa</a>
+							</li>
+							<li><a href="https://www.peru.travel/es/pe" target="_blank">PromPerú - Turismo</a></li>
+							<li><a href="https://www.cultura.gob.pe/" target="_blank">Ministerio de Cultura</a></li>
+							<li><a href="https://www.unsa.edu.pe/" target="_blank">Universidad Nacional de San
+									Agustín</a></li>
+						</ul>
+					</section>
+				</div>
+
+				<!-- Columna 4: Contacto -->
+				<div class="col-3 col-6-medium col-12-small">
+					<section class="widget contact last">
+						<h3>Contáctanos</h3>
+						<p>¿Tienes un evento o espacio cultural que desees compartir? Escríbenos:</p>
+						<p><strong>contacto@arequipacultural.pe</strong></p>
+						<form method="POST" action="http://localhost:8080/contacto" style="font-size:0.9em;">
+							<input type="text" name="nombre" placeholder="Nombre" required
+								style="width:100%; margin-bottom:5px;">
+							<input type="email" name="email" placeholder="Email" required
+								style="width:100%; margin-bottom:5px;">
+							<textarea name="mensaje" placeholder="Mensaje" required
+								style="width:100%; margin-bottom:5px; height:50px;"></textarea>
+							<input type="submit" value="Enviar" style="width:100%; cursor:pointer;">
+						</form>
+					</section>
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div class="row">
+				<div class="col-12">
+					<div id="copyright">
+						<ul class="menu">
+							<li>&copy; 2025 Arequipa Cultural. Todos los derechos reservados</li>
+							<li>Diseño basado en <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+						</ul>
 					</div>
 				</div>
-			</footer>
-		</div>
+			</div>
+		</footer>
+	</div>
 		<!-- Scripts -->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.dropotron.min.js"></script>
