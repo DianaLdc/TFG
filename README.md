@@ -1,36 +1,42 @@
-# Proyecto: Página web de recomendaciones culturales de Arequipa  
+# 🌎 Proyecto: Página web de recomendaciones culturales de Arequipa  
 
 **Integrantes:**  
-- Diana Ramos Rodrigo  
-- Axcel Jesús Cuno Lima  
-- Mateo Ladrón de Guevara  
+- **Diana Ramos Rodrigo**  
+- **Axcel Jesús Cuno Lima**  
+- **Mateo Ladrón de Guevara**  
 
-**Plantilla base:** Verti by HTML5 UP ([html5up.net](https://html5up.net))  
-**Modificaciones:** Personalización de colores, secciones, estilo visual y contenido temático sobre Arequipa.  
+**Plantilla base:** Proyecto anterior adaptado y personalizado para esta versión.  
+**Modificaciones:** Rediseño visual, estructura optimizada, nueva paleta de colores y contenido temático enfocado en la cultura arequipeña.  
 
 ---
 
 ## 📖 Descripción  
 
 Este sitio web fue desarrollado como parte de una actividad académica para la **Universidad Nacional de San Agustín (UNSA)**.  
-El objetivo principal es ofrecer **recomendaciones culturales, artísticas y gastronómicas** de la ciudad de **Arequipa**, destacando los lugares, talleres y eventos que reflejan su identidad y riqueza patrimonial.  
+El propósito es ofrecer **recomendaciones culturales, artísticas y gastronómicas** sobre la ciudad de **Arequipa**, destacando los lugares, talleres, tradiciones y eventos que reflejan su identidad y patrimonio.  
 
-El diseño se basa en la plantilla **Verti** de **HTML5 UP**, adaptada cuidadosamente para mostrar una interfaz moderna, limpia y completamente adaptable a distintos dispositivos (computadoras, tablets y celulares).  
+El diseño se basa en una **plantilla reutilizada de un proyecto previo**, la cual fue **modificada integralmente** para incorporar un estilo moderno, limpio y completamente adaptable a distintos dispositivos (computadoras, tablets y celulares).  
 
 ---
 
 ## 🧰 Tecnologías utilizadas  
 
-- **HTML5** → estructura y contenido del sitio.  
+- **HTML5** → estructura y contenido principal del sitio.  
 - **CSS3 / SCSS** → personalización de estilos, colores y disposición visual.  
-- **JavaScript (jQuery)** → efectos interactivos y dinamismo en las secciones.  
+- **JavaScript (jQuery)** → manejo de interactividad y efectos dinámicos en secciones específicas.  
+
+---
+
+## 🎨 Características destacadas  
+
+- Diseño **responsive y accesible**.  
+- Contenido **cultural dividido por categorías** (lugares, arte, gastronomía).  
+- Código **estructurado y comentado** para fácil mantenimiento.  
+- **Compatibilidad** con navegadores modernos.  
 
 ---
 
 ## 💡 Licencia  
 
-La plantilla original **“Verti”** es de uso libre bajo la **licencia Creative Commons Attribution 3.0 (CC BY 3.0)**, disponible en  
-👉 [https://html5up.net/license](https://html5up.net/license).  
-
-Créditos originales al autor **AJ (@ajlkn)** y al sitio [HTML5 UP](https://html5up.net).  
-
+La plantilla original pertenece a un **proyecto académico anterior**, y esta versión fue desarrollada con **fines educativos y de práctica**.  
+El contenido, imágenes y textos sobre la ciudad de Arequipa son de **elaboración propia** o de **uso libre con fines educativos**.  
