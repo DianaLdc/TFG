@@ -1,64 +1,75 @@
-/*
-	Verti by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+// Esperar a que el DOM cargue completamente
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("Página cargada correctamente ✅");
 
-(function($) {
+    // --- Navegación suave entre secciones ---
+    document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+        enlace.addEventListener("click", function (e) {
+            e.preventDefault();
+            const destino = document.querySelector(this.getAttribute("href"));
+            if (destino) {
+                destino.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
 
-	var	$window = $(window),
-		$body = $('body');
+    // --- Botón para volver arriba ---
+    const botonArriba = document.createElement("button");
+    botonArriba.textContent = "↑";
+    botonArriba.id = "botonArriba";
+    botonArriba.style.position = "fixed";
+    botonArriba.style.bottom = "20px";
+    botonArriba.style.right = "20px";
+    botonArriba.style.padding = "10px 15px";
+    botonArriba.style.border = "none";
+    botonArriba.style.borderRadius = "50%";
+    botonArriba.style.background = "#e74c3c";
+    botonArriba.style.color = "white";
+    botonArriba.style.fontSize = "18px";
+    botonArriba.style.cursor = "pointer";
+    botonArriba.style.display = "none";
+    botonArriba.style.boxShadow = "0 2px 8px rgba(0,0,0,0.3)";
+    document.body.appendChild(botonArriba);
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:  [ '1281px',  '1680px' ],
-			large:   [ '981px',   '1280px' ],
-			medium:  [ '737px',   '980px'  ],
-			small:   [ null,      '736px'  ]
-		});
+    botonArriba.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            botonArriba.style.display = "block";
+        } else {
+            botonArriba.style.display = "none";
+        }
+    });
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			mode: 'fade',
-			noOpenerFade: true,
-			speed: 300
-		});
+    // --- Confirmación de envío de formulario ---
+    const form = document.querySelector("form");
+    if (form) {
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Gracias por contactarnos, " + form.nombre.value + " 💌");
+            form.reset();
+        });
+    }
 
-	// Nav.
+    // --- Pequeña animación de aparición al hacer scroll ---
+    const elementos = document.querySelectorAll(".box, .container, img, h2");
+    const aparecer = () => {
+        const trigger = window.innerHeight * 0.85;
+        elementos.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < trigger) {
+                el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+                el.style.opacity = "1";
+                el.style.transform = "translateY(0)";
+            } else {
+                el.style.opacity = "0";
+                el.style.transform = "translateY(40px)";
+            }
+        });
+    };
 
-		// Toggle.
-			$(
-				'<div id="navToggle">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
-
-		// Panel.
-			$(
-				'<div id="navPanel">' +
-					'<nav>' +
-						$('#nav').navList() +
-					'</nav>' +
-				'</div>'
-			)
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $body,
-					visibleClass: 'navPanel-visible'
-				});
-
-})(jQuery);
+    window.addEventListener("scroll", aparecer);
+    aparecer(); // ejecutar al cargar
+});
