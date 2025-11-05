@@ -651,7 +651,7 @@ input, select, textarea {
 		button:hover,
 		.button:hover {
 			background: #996300;
-		}
+		} 
 
 		input[type="button"]:active,
 		input[type="submit"]:active,
