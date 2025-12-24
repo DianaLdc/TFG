@@ -40,3 +40,30 @@ El diseño se basa en una **plantilla reutilizada de un proyecto previo**, la cu
 
 La plantilla original pertenece a un **proyecto académico anterior**, y esta versión fue desarrollada con **fines educativos y de práctica**.  
 El contenido, imágenes y textos sobre la ciudad de Arequipa son de **elaboración propia** o de **uso libre con fines educativos**.  
+
+---
+
+## ▶️ Servir localmente
+
+Para probar el sitio en tu máquina y navegar entre las páginas como en producción, puedes levantar un servidor HTTP simple desde la carpeta del proyecto `TFG`.
+
+1. Abre una terminal en la carpeta del proyecto:
+
+```bash
+cd TFG
+```
+
+2. Ejecuta el servidor (requiere Python 3):
+
+```bash
+python serve.py
+```
+
+3. Abre en tu navegador:
+
+```
+http://localhost:8000/
+```
+
+El script `serve.py` sirve el contenido estático de la carpeta `TFG`, incluyendo `index.html`, y permite navegar entre las páginas normalmente.
+
